@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="StatAtlas — national statistics for twelve countries, plainly explained. Population, GDP, GDP per person, life expectancy and unemployment, every figure sourced and dated.">
+<title>StatAtlas — National Statistics, Plainly Explained</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">▦</span> StatAtlas</a>
+    <nav aria-label="Main navigation">
+      <a href="#/" data-nav="home">Overview</a>
+      <a href="#/countries" data-nav="countries">Rankings</a>
+      <a href="#/compare" data-nav="compare">Compare</a>
+      <a href="#/methodology" data-nav="methodology">Sources &amp; method</a>
+    </nav>
+    <form class="topsearch" id="topsearch" role="search">
+      <label class="visually-hidden" for="q">Search countries</label>
+      <input id="q" name="q" type="search" placeholder="Search a country…" autocomplete="off">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>StatAtlas</strong> — an original, independent statistics site. Figures: World Bank World Development Indicators (population 2024, GDP 2024, GDP per capita 2024, life expectancy 2023) and ILO-modelled unemployment (2024). See <a href="#/methodology">Sources &amp; method</a> for definitions, years and caveats. Works fully offline; no data leaves your browser.</p>
+    <p class="fine">Data retrieved November 2026. Figures are rounded; national statistical offices may publish slightly different values. GDP per person is GDP divided by population.</p>
+  </div>
+</footer>
+</body>
+</html>
